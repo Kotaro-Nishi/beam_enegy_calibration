@@ -1,0 +1,8 @@
+digraph {
+	AUndu -> IFunc
+	UnDi -> ModularEvaluation_NonGUI
+	IFunc -> ModularEvaluation_NonGUI
+	AUndu -> ModularEvaluation_NonGUI
+	AUndu -> plot
+	UnDi -> plot
+}
