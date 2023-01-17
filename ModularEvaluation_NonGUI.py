@@ -148,7 +148,7 @@ print(DataPathBase)
 
 #datarangelow = 1804 + 550
 
-Backgroundimage = cv2.imread(DataPathBase + "/BG/raw_shortExp/File1.tif",cv2.IMREAD_UNCHANGED)
+Backgroundimage = cv2.imread(DataPathBase + "/raw_shortExp/File1.tif",cv2.IMREAD_UNCHANGED)
 ListOfAllMatrices = []
 print(DataPathBase + "/raw_shortExp/File1.tif")
 
