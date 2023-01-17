@@ -5,4 +5,5 @@ digraph {
 	AUndu -> ModularEvaluation_NonGUI
 	AUndu -> plot
 	UnDi -> plot
+	plot -> ModularEvaluation_NonGUI
 }

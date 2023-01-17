@@ -24,5 +24,6 @@ h.edge("IFunc","ModularEvaluation_NonGUI")
 h.edge("AUndu","ModularEvaluation_NonGUI")
 h.edge("AUndu","plot")
 h.edge("UnDi","plot")
+h.edge("plot","ModularEvaluation_NonGUI")
 
 h.render(directory="nishi",view =True)
