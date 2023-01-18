@@ -82,8 +82,4 @@ g.edge("I5","U12")
 g.edge("I2","U12")
 
 
-
-
-
-
 g.render(directory="nishi",view =True)
