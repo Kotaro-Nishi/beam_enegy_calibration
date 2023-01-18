@@ -1,7 +1,7 @@
 
 
 for nicestfit in range(1):
-    posdatas = list(range(25))
+    posdatas = list(range(825))
     y_fitLst = []
     dataLst = []
     everynth = 1
