@@ -263,7 +263,7 @@ def means(choice):
             lstname = targetfiles[i][0:-4]
             chosenset = lstname+chosenfolders[Numdata] + str(Numdata)
             exec("%s=[]"%(chosenset))
-            with open(DataPath + "//All_Modular//" + folderoffset + chosenfolders[Numdata] + "//" + targetfiles[i],"rt") as csvfile:
+            with open(DataPath + "/All_Modular/" + folderoffset + chosenfolders[Numdata] + "//" + targetfiles[i],"rt") as csvfile:
                 spamreader = csv.reader(csvfile, delimiter=',')
                 for row in spamreader:
                     content = np.array(row).astype(float)
