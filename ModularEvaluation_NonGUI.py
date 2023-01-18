@@ -34,9 +34,9 @@ zetaxx = np.array([0.])
 
 zetaprime2 = np.linspace(-ratio*UnDi.apy,ratio*UnDi.apy,1000)
 
-NumOfSeries = 25
-LengthOfData = 25
-Interval = [000,25]
+NumOfSeries = 825
+LengthOfData = 825
+Interval = [000,825]
 #Interval = [000,425]
 
 WidthOfStripe = 5
