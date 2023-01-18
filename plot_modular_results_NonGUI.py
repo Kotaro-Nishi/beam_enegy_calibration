@@ -51,7 +51,7 @@ for nicestfit in range(1):
     axA.set_ylabel('Intensity [a.u.]',fontsize=fntsze)
     axA.tick_params(axis='both', which='major', labelsize=fntsze)
     axA.legend(['Fit','Data'],fontsize=fntsze)
-    #plt.show()
+    plt.show()
     
     
 
@@ -145,7 +145,7 @@ for Strpidx in range(int(NumOfSeries/everynth)):
         axB.tick_params(axis='both', which='major', labelsize=fntsze)
         #axB.legend(['Fit'])
         
-        #plt.show()
+        plt.show()
         #"""
 
 #exit()
