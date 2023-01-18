@@ -13,6 +13,7 @@ g.edge("AUndu","MoFu")
 g.edge("UnDi","plot_modular_results")
 g.edge("IFunc","UnDi")
 g.edge("AUndu","UnDi")
+g.edge("tkFIT","Eval_Modular")
 
 g.render(directory="nishi",view =True)
 

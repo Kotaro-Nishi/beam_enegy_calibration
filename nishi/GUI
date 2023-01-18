@@ -10,4 +10,5 @@ digraph {
 	UnDi -> plot_modular_results
 	IFunc -> UnDi
 	AUndu -> UnDi
+	tkFIT -> Eval_Modular
 }
