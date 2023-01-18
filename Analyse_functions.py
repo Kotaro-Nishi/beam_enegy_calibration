@@ -220,7 +220,7 @@ def ld(chosenfolder,DataPath):
                         chosenset = listidentifier+chosenfolders[Numdata]
                         exec("global %s ; %s=[]"%(chosenset,chosenset))
 
-                        with open(DataPath + "//All_Modular//" + folderoffset + chosenfolders[Numdata] + "//" + targetfiles[i],"rt") as csvfile:
+                        with open(DataPath + "/All_Modular/" + folderoffset + chosenfolders[Numdata] + "//" + targetfiles[i],"rt") as csvfile:
                             spamreader = csv.reader(csvfile, delimiter=',')
                             for row in spamreader:
                                 content = np.array(row).astype(float)
