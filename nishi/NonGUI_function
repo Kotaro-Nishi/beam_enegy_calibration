@@ -1,0 +1,68 @@
+digraph {
+	subgraph cluster_ModularEvaluation_NonGUI {
+		color=darkgreen
+		M1 [label=per_iteation]
+		M2 [label=diffraction_dataset]
+		M3 [label=objective_diffraction]
+		M4 [label=MODFIT]
+	}
+	subgraph cluster_UnDi {
+		color=red
+		U1 [label=CoditionAmpl]
+		U2 [label=Conditionphase]
+		U3 [label=amplitudeonaperture_X]
+		U4 [label=phaseonaperture_X]
+		U5 [label=amplitudeonaperture]
+		U6 [label=phaseonaperture]
+		U7 [label=plotaperture]
+		U8 [label=superamplitudeInitialFit]
+		U9 [label=superamplitudeInitialFit_X]
+		U10 [label=plainintensity]
+		U11 [label=diffractionintensityInitialFit_X]
+		U12 [label=diffractionintensityInitialFit]
+	}
+	subgraph cluster_AUndu {
+		color=blue
+		A1 [label=Amlitude]
+		A2 [label=LamU]
+		A3 [label=Lu]
+	}
+	subgraph cluster_IFunc {
+		color=black
+		I1 [label=convolveplain]
+		I2 [label=convolvefresnel]
+		I3 [label=ElectronSourcefunction]
+		I4 [label=ElectronSourcefunctionSet]
+		I5 [label=squaredphase]
+	}
+	color=yellow
+	P [label=plot_modular_results_NonGUI]
+	P -> M4
+	U11 -> P
+	U10 -> P
+	U9 -> P
+	M3 -> M4
+	M1 -> M4
+	M2 -> M3
+	U11 -> M3
+	A1 -> U3
+	U1 -> U3
+	A2 -> U3
+	A2 -> U4
+	A3 -> U4
+	A2 -> U5
+	A1 -> U5
+	A2 -> U6
+	A3 -> U6
+	U3 -> U9
+	U6 -> U9
+	U9 -> U10
+	U10 -> U11
+	I3 -> U11
+	I5 -> U11
+	I2 -> U11
+	U8 -> U12
+	I3 -> U12
+	I5 -> U12
+	I2 -> U12
+}

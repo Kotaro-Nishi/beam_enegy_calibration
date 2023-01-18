@@ -1,5 +1,14 @@
 digraph {
-	A [label=Alice]
-	B [label=Bob]
-	A -> B
+	MoFu -> Eval_Modular
+	AUndu -> IFunc
+	UnDi -> ModularEvaluation
+	Ifunc -> ModularEvaluation
+	AUndu -> ModularEvaluation
+	UnDi -> MoFu
+	IFunc -> MoFu
+	AUndu -> MoFu
+	UnDi -> plot_modular_results
+	IFunc -> UnDi
+	AUndu -> UnDi
+	tkFIT -> Eval_Modular
 }
