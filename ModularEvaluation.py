@@ -144,7 +144,7 @@ whichdata = 0
 print(whichdata)
 
 slashes = [i for i,ltr in enumerate(DataPath) if ltr == "/"]
-DataPathBase = DataPath[0:slashes[-2]]
+DataPathBase = DataPath[0:slashes[-1]]
 
 print(DataPathBase)
 
