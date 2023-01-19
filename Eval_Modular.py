@@ -255,7 +255,7 @@ def select_file():
         title='Open a file',
         initialdir='/',
         filetypes=filetypes)
-    print(filename+"flag1")
+    print(filename)
 
     with open(filename, "r") as csv_file:
         csvdata = csv.reader(csv_file, delimiter=',')
