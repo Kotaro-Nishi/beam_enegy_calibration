@@ -13,13 +13,6 @@ digraph {
 		M3 [label=objective_diffraction]
 		M4 [label=MODFIT]
 	}
-	subgraph "cluster_Modular_functions.py" {
-		color=darkgreen
-		M1 [label=per_iteation]
-		M2 [label=diffraction_dataset]
-		M3 [label=objective_diffraction]
-		M4 [label=MODFIT]
-	}
 	subgraph cluster_UnDi {
 		color=red
 		U1 [label=CoditionAmpl]
@@ -53,4 +46,29 @@ digraph {
 		N1 [label=Ana]
 	}
 	N1 -> E1
+	E3 -> "ModularEvaluation.py"
+	"ModularEvaluation.py" -> M4
+	U11 -> M2
+	M2 -> M3
+	M3 -> M4
+	A1 -> U3
+	U1 -> U3
+	A2 -> U3
+	A2 -> U4
+	A3 -> U4
+	A2 -> U5
+	A1 -> U5
+	A2 -> U6
+	A3 -> U6
+	U3 -> U9
+	U6 -> U9
+	U9 -> U10
+	U10 -> U11
+	I3 -> U11
+	I5 -> U11
+	I2 -> U11
+	U8 -> U12
+	I3 -> U12
+	I5 -> U12
+	I2 -> U12
 }

@@ -101,13 +101,6 @@ with h.subgraph(name="cluster_Modular_functions.py") as c:
     c.node("M3","objective_diffraction")
     c.node("M4","MODFIT")
 
-with h.subgraph(name="cluster_Modular_functions.py") as c:
-    c.attr(color='darkgreen')
-    c.node("M1","per_iteation")
-    c.node("M2","diffraction_dataset")
-    c.node("M3","objective_diffraction")
-    c.node("M4","MODFIT")
-
 with h.subgraph(name="cluster_UnDi") as c:
     c.attr(color='red')
     c.node("U1","CoditionAmpl")
@@ -142,6 +135,33 @@ with h.subgraph(name="cluster_Ana") as c:
 
 #EDGES
 h.edge("N1","E1")
+h.edge("E3","ModularEvaluation.py")
+h.edge("ModularEvaluation.py","M4")
+h.edge("U11","M2")
+h.edge("M2","M3")
+h.edge("M3","M4")
+
+h.edge("A1","U3")
+h.edge("U1","U3")
+h.edge("A2","U3")
+h.edge("A2","U4")
+h.edge("A3","U4")
+h.edge("A2","U5")
+h.edge("A1","U5")
+h.edge("A2","U6")
+h.edge("A3","U6")
+h.edge("U3","U9")
+h.edge("U6","U9")
+h.edge("U9","U10")
+h.edge("U10","U11")  
+h.edge("I3","U11") 
+h.edge("I5","U11") 
+h.edge("I2","U11") 
+h.edge("U8","U12")
+h.edge("I3","U12")
+h.edge("I5","U12")
+h.edge("I2","U12")
+
 
 
 
