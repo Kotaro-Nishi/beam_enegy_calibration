@@ -1,0 +1,74 @@
+digraph {
+	subgraph "cluster_Eval_Modular.py" {
+		color=purple
+		E1 [label=load_button_clicked]
+		E2 [label=plot_button_clicked]
+		E3 [label=fit_button_clicked]
+		E4 [label=selectfile]
+	}
+	subgraph "cluster_Modular_functions.py" {
+		color=darkgreen
+		M1 [label=per_iteation]
+		M2 [label=diffraction_dataset]
+		M3 [label=objective_diffraction]
+		M4 [label=MODFIT]
+	}
+	subgraph cluster_UnDi {
+		color=red
+		U1 [label=CoditionAmpl]
+		U2 [label=Conditionphase]
+		U3 [label=amplitudeonaperture_X]
+		U4 [label=phaseonaperture_X]
+		U5 [label=amplitudeonaperture]
+		U6 [label=phaseonaperture]
+		U7 [label=plotaperture]
+		U8 [label=superamplitudeInitialFit]
+		U9 [label=superamplitudeInitialFit_X]
+		U10 [label=plainintensity]
+		U11 [label=diffractionintensityInitialFit_X]
+		U12 [label=diffractionintensityInitialFit]
+	}
+	subgraph cluster_IFunc {
+		color=black
+		I1 [label=convolveplain]
+		I2 [label=convolvefresnel]
+		I3 [label=ElectronSourcefunction]
+		I4 [label=ElectronSourcefunctionSet]
+		I5 [label=squaredphase]
+	}
+	subgraph cluster_AUndu {
+		color=blue
+		A1 [label=Amlitude]
+		A2 [label=LamU]
+		A3 [label=Lu]
+	}
+	subgraph cluster_Ana {
+		N1 [label=Ana]
+	}
+	N1 -> E1
+	E3 -> "ModularEvaluation.py"
+	"ModularEvaluation.py" -> M4
+	U11 -> M2
+	M2 -> M3
+	M3 -> M4
+	A1 -> U3
+	U1 -> U3
+	A2 -> U3
+	A2 -> U4
+	A3 -> U4
+	A2 -> U5
+	A1 -> U5
+	A2 -> U6
+	A3 -> U6
+	U3 -> U9
+	U6 -> U9
+	U9 -> U10
+	U10 -> U11
+	I3 -> U11
+	I5 -> U11
+	I2 -> U11
+	U8 -> U12
+	I3 -> U12
+	I5 -> U12
+	I2 -> U12
+}

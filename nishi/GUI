@@ -2,7 +2,7 @@ digraph {
 	MoFu -> Eval_Modular
 	AUndu -> IFunc
 	UnDi -> ModularEvaluation
-	Ifunc -> ModularEvaluation
+	IFunc -> ModularEvaluation
 	AUndu -> ModularEvaluation
 	UnDi -> MoFu
 	IFunc -> MoFu
