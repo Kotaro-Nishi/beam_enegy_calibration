@@ -135,16 +135,16 @@ print(Commonpath)
 
 DataPath = arg[1]
 
-print(DataPath)
+print("DataPath:"+DataPath)
 
 whichdata = 0
 
 print(whichdata)
 
-slashes = [i for i,ltr in enumerate(DataPath) if ltr == "\\"]
-DataPathBase = DataPath[0:slashes[-2]]
+slashes = [i for i,ltr in enumerate(DataPath) if ltr == "/"]
+DataPathBase = DataPath[0:slashes[-1]]
 
-print(DataPathBase)
+print("DataPathBase:"+DataPathBase)
 
 #datarangelow = 1804 + 550
 
