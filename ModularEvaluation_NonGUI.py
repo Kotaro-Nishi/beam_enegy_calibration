@@ -150,7 +150,7 @@ print("DataPathBase:"+DataPathBase)
 
 Backgroundimage = cv2.imread(DataPathBase + "/BG/raw_shortExp/File1.tif",cv2.IMREAD_UNCHANGED)
 ListOfAllMatrices = []
-print(DataPathBase + "/BG/raw_shortExp/File1.tif")
+print("BGimage:"+DataPathBase + "/BG/raw_shortExp/File1.tif")
 
 
 
