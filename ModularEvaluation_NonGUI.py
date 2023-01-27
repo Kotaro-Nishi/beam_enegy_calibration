@@ -162,7 +162,7 @@ for ii in range(k0,k0+LengthOfData):
     List4VolumeMinusBG = []
     print(filelist[ii*4])
     for i in range(4):
-
+        print("datafilepath:"+DataPath + "/" + filelist[i+ii*4])
         PictureMinusBG = cv2.imread(DataPath + "/" + filelist[i+ii*4],cv2.IMREAD_UNCHANGED).astype(int)-Backgroundimage
 
         PictureMinusBG = nptp(nptp(np.float32(PictureMinusBG))[0:2300])
