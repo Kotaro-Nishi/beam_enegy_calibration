@@ -33,7 +33,7 @@ for x in param_widgets.values():
     x.layout.width = "400px"
 
 # 画像を読み込む。
-img = cv2.imread("File74.tif")
+img = cv2.imread("//data/Mainz/BeamEnergyCalib/data/Beam20200320_1/Energymeasurement_2/BG/raw_shortExp/File1.tif")
 
 # ウィジェットを表示する。
 widgets.interactive(process, img=widgets.fixed(img), **param_widgets)

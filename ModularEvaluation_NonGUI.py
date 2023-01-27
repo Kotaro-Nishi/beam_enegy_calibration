@@ -149,8 +149,9 @@ print("DataPathBase:"+DataPathBase)
 #datarangelow = 1804 + 550
 
 Backgroundimage = cv2.imread(DataPathBase + "/BG/raw_shortExp/File1.tif",cv2.IMREAD_UNCHANGED)
+
 ListOfAllMatrices = []
-print("BGimage:"+DataPathBase + "/BG/raw_shortExp/File1.tif")
+#print("BGimage:"+DataPathBase + "/BG/raw_shortExp/File1.tif")
 
 
 
@@ -162,8 +163,9 @@ for ii in range(k0,k0+LengthOfData):
     List4VolumeMinusBG = []
     print(filelist[ii*4])
     for i in range(4):
-        print("datafilepath:"+DataPath + "/" + filelist[i+ii*4])
-        PictureMinusBG = cv2.imread(DataPath + "/" + filelist[i+ii*4],cv2.IMREAD_UNCHANGED).astype(int)-Backgroundimage
+        #print("datafilepath:"+DataPath + "/" + filelist[i+ii*4])
+        #print(cv2.imread(DataPath + "/" + filelist[i+ii*4],cv2.IMREAD_UNCHANGED).astype(int))
+        PictureMinusBG = cv2.imread(DataPath + "/" + filelist[i+ii*4],cv2.IMREAD_UNCHANGED).astype(int) - Backgroundimage
 
         PictureMinusBG = nptp(nptp(np.float32(PictureMinusBG))[0:2300])
         
