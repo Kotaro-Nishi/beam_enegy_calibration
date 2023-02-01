@@ -269,8 +269,9 @@ PositionidxList):
         UnDi.SingleAmplitudeDone = 0
 
         #exec(open("./plot_modular_results.py").read())
-
+        print("==================================")
         exec(open("./saving_things.py").read())
+        print("==================================")
 
         if len(WLidxList) > 1:
             deltaGuess = result.params['delta0_%i'% listOfboots[FirstSingularitem]].value

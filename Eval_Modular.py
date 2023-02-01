@@ -35,7 +35,7 @@ import Analyse_functions as Ana
 
 dp = 1 # do plot instant
 
-ConfigLst = ["C:/Users/24nis/Documents/data/Beam20200320_1/Energymeasurement_2/raw_shortExp",825,825,[0,825],[1.4,.0001,352.1,.1870,5.,11.,1.],0,330E-6,412E-9,0.0048088E-9,1315.3024,0,10000]
+ConfigLst = ["//data/Mainz/BeamEnergyCalib/data/Beam20200320_1/Energymeasurement_2/raw_shortExp",825,825,[0,825],[1.4,.0001,352.1,.1870,5.,11.,1.],0,330E-6,412E-9,0.0048088E-9,1315.3024,0,10000]
 
 ####################################
 
@@ -58,7 +58,7 @@ options = {"padx": 5, "pady": 5}
 #temperature_label = ttk.Label(frame, text="Folder")
 #temperature_label.grid(column=0, row=0, sticky="W", **options)
 
-exec(open("tkFITentries.py ").read())
+exec(open("tkFITentries.py").read())
 
 # Loading window
 
