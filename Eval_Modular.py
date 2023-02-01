@@ -68,7 +68,7 @@ def load_button_clicked():
 
     try:
         Folder = loadstring.get()
-        print(Folder)
+        print("Folder:"+Folder)
 
         #os.system("python ./Analyse_Gamma_Modular.py " + Folder)
 
@@ -80,7 +80,8 @@ def load_button_clicked():
         gg0 = Ana.cl("gammafitSharedP_20210401_825_825_seed10000_new_zpfit_boot000425*")
         gg4 = Ana.cl("gammafitSharedP_20210401_825_825_seed10000_new_zpfit_boot400825*")
         gg8 = Ana.cl("gammafitSharedP_20210401_825_825_seed10000_new_zpfit_boot000825*")
-
+        print(gWL)
+        print("checkpoint1")
         dd0 = Ana.cl("delta0fitSharedP_20210401_825_825_seed10000_new_zpfit_boot000425*")
         dd4 = Ana.cl("delta0fitSharedP_20210401_825_825_seed10000_new_zpfit_boot400825*")
         dd8 = Ana.cl("delta0fitSharedP_20210401_825_825_seed10000_new_zpfit_boot000825*")
@@ -96,7 +97,7 @@ def load_button_clicked():
         Ana.cp([gg0[0],gg4[0],gg8[0]],[dd0[0],dd4[0],dd8[0]])
 
         Ana.pl(gWL)
-
+        print(gg0)
         print("Systematic error of fit: ",.511/np.sqrt(2)*np.sqrt((np.mean(gg0)-np.mean(gg8))**2+(np.mean(gg4)-np.mean(gg8))**2))
         print("mean Energy 000425: ",.511 * np.mean(gg0))
         print("mean gamma 000425: ",np.mean(gg0))
@@ -163,7 +164,7 @@ def fit_button_clicked():
         print("specify Targetfolder")
     else:
         print("Targetfolder: ", Targetfolder)
-        exec(open("ModularEvaluation.py ").read())
+        exec(open("ModularEvaluation.py").read())
 
 
 """
