@@ -208,42 +208,42 @@ def Lambda_L000825():
     Entry4 = Label(frame, text = "Target folder: \All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_MultiWL").grid(column=1, row=1, **options)
     global Targetfolder
     global mode
-    Targetfolder = "\All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_MultiWL"
+    Targetfolder = "/All_Modular/SharedP_20210401_825_825_seed10000_new_zpfit_MultiWL"
     mode = "lamb"
 
 def Interval000825():
     Entry4 = Label(frame, text = "Target folder: \All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_boot000825").grid(column=1, row=1, **options)
     global Targetfolder
     global mode
-    Targetfolder = "\All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_boot000825"
+    Targetfolder = "/All_Modular/SharedP_20210401_825_825_seed10000_new_zpfit_boot000825"
     mode = "posi"
 
 def Interval000425():
     Entry4 = Label(frame, text = "Target folder: \All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_boot000425").grid(column=1, row=1, **options)
     global Targetfolder
     global mode
-    Targetfolder = "\All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_boot000425"
+    Targetfolder = "/All_Modular/SharedP_20210401_825_825_seed10000_new_zpfit_boot000425"
     mode = "posi"
 
 def Interval400825():
     Entry4 = Label(frame, text = "Target folder: \All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_boot400825").grid(column=1, row=1, **options)
     global Targetfolder
     global mode
-    Targetfolder = "\All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_boot400825"
+    Targetfolder = "/All_Modular/SharedP_20210401_825_825_seed10000_new_zpfit_boot400825"
     mode = "posi"
 
 def YscreenCMD():
     Entry4 = Label(frame, text = "Target folder: \All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_Yscreen").grid(column=1, row=1, **options)
     global Targetfolder
     global mode
-    Targetfolder = "\All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_Yscreen"
+    Targetfolder = "/All_Modular/SharedP_20210401_825_825_seed10000_new_zpfit_Yscreen"
     mode = "Yscr"
 
 def phaseCMD():
     Entry4 = Label(frame, text = "Target folder: \All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_delta0fit").grid(column=1, row=1, **options)
     global Targetfolder
     global mode
-    Targetfolder = "\All_Modular\SharedP_20210401_825_825_seed10000_new_zpfit_delta0fit"
+    Targetfolder = "/All_Modular/SharedP_20210401_825_825_seed10000_new_zpfit_delta0fit"
     mode = "delt"
 
 def select_file():
